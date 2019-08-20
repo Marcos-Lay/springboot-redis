@@ -1,0 +1,22 @@
+<EventNotificationAlert version="1.0" xmlns="urn:psialliance-org">
+    <ipAddress>192.168.5.148</ipAddress>
+    <protocolType>HTTP</protocolType>
+    <macAddress>68:6d:bc:4e:80:cc</macAddress>
+    <channelID>1</channelID>
+    <dateTime>1970-01-01T18:47:00+08:00</dateTime>
+    <activePostCount>1</activePostCount>
+    <eventType>PeopleCounting</eventType>
+    <eventState>active</eventState>
+    <eventDescription>peopleCounting alarm</eventDescription>
+    <channelName>Camera 01</channelName>
+    <peopleCounting>
+        <statisticalMethods>timeRange</statisticalMethods>
+        <TimeRange>
+            <startTime>1970-01-01T18:46:00+08:00</startTime>
+            <endTime>1970-01-01T18:47:00+08:00</endTime>
+        </TimeRange>
+        <enter>0</enter>
+        <exit>0</exit>
+        <pass>0</pass>
+    </peopleCounting>
+</EventNotificationAlert>

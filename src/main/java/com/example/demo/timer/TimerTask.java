@@ -1,6 +1,5 @@
 package com.example.demo.timer;
 
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,8 +10,8 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class TimerTask {
-    @Scheduled(cron = "0/5 * * * * ?")
-    public void test(){
+    //@Scheduled(cron = "0/5 * * * * ?")
+    public void test1(){
         System.out.println(System.currentTimeMillis());
     }
 }

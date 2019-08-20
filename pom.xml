@@ -16,6 +16,9 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring_version>4.3.16.RELEASE</spring_version>
+        <mongo_java_version>3.4.0</mongo_java_version>
+        <spring_data_mongodb_version>1.9.5.RELEASE</spring_data_mongodb_version>
     </properties>
 
     <dependencies>
@@ -33,6 +36,16 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.1</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -85,6 +98,32 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.2.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.shuncom.api</groupId>
+            <artifactId>shuncom-java-sdk</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>-->
+        <!-- json -->
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <!-- json-lib依赖，处理xml -->
+        <dependency>
+           <groupId>xom</groupId>
+           <artifactId>xom</artifactId>
+           <version>1.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -92,6 +131,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--<configuration>
+                    <fork>true</fork>
+                </configuration>-->
             </plugin>
         </plugins>
     </build>

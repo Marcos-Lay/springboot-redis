@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -19,7 +18,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @MapperScan({"com.example.demo.mapper","com.example.demo.dao"})
-@EnableScheduling
 @EnableCaching
 @EnableTransactionManagement
 @EnableSwagger2
@@ -46,7 +44,6 @@ public class DemoApplication {
                 .paths(PathSelectors.any())
                 .build();
     }
-
     /**
      * 构建 api文档的详细信息函数
      *
@@ -58,7 +55,7 @@ public class DemoApplication {
                 .title("标题")
                 //描述
                 .description("描述")
-                .termsOfServiceUrl("http://localhost:8080/swagger-ui.html")
+                .termsOfServiceUrl("http://localhost:8088/swagger-ui.html")
                 //创建人
                 .contact("api")
                 //版本
